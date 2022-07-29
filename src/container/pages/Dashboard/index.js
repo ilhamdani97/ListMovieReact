@@ -19,7 +19,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         setIsloading(true);
-        axios.get('http://www.omdbapi.com?apikey=faf7e5bb&s=Batman&page=2').then(res => {
+        axios.get('https://omdbapi.com?apikey=faf7e5bb&s=Batman&page=2').then(res => {
             setListMovie(res.data.Search);
             setIsloading(false);
         })
@@ -30,7 +30,7 @@ const Dashboard = () => {
 
         setShowModal(true);
 
-        axios.get(`http://www.omdbapi.com/?apikey=faf7e5bb&i=${id}&plot=full`).then(res => {
+        axios.get(`https://omdbapi.com/?apikey=faf7e5bb&i=${id}&plot=full`).then(res => {
             setDetailMovie(res);
             setIsloadingDetail(false);
         })
