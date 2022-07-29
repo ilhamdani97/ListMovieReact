@@ -1,0 +1,14 @@
+.o-dashboard {
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #FFDE03;
+
+    .container-card-movie {
+        padding: 40px;
+
+        .m-card-movie {
+            margin-bottom: 56px;
+        }
+    }
+}

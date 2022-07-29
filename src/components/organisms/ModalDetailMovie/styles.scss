@@ -1,0 +1,176 @@
+.o-modal-detail-movie {
+    position: absolute;
+    width: 310px;
+    height: 500px;
+    background-color: #212121;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    top: 0; 
+    margin-top: 400px;
+    right: 50%;
+    transform: translate(50%,-50%);
+    z-index: 5;
+
+    display: none;
+
+    &.show {
+        display: block;
+    }
+
+    .MuiSkeleton-root {
+        background-color: #9e9e9e,
+    }
+    
+    .header-poster {
+        width: 310px;
+        height: 500px;
+        
+    }
+    .icon-close {
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        margin: 16px;
+
+        cursor: pointer;
+    }
+
+    .content-detail {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        .gradient-view {
+            width: 100%;
+            height: 55px;
+            background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(33,33,33,0.45171572046787467) 100%);
+
+            &.skleton {
+                background: none;
+            }
+        }
+
+        .container {
+            width: 100%;
+            height: 249px;
+            background-color: #212121;
+            margin-top: -4px;
+
+            &.skleton {
+                background-color: transparent;
+            }
+
+            .score-container {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: 16px;
+                border-radius: 50%;
+                border: 2px solid #FFDE03;
+                padding-top: 8px;
+                padding: 10px 0px 12px 0px;
+                text-align: center;
+
+                &.skleton {
+                    border: none;
+                }
+                text {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #FFDE03;
+                    margin: 10px;
+                }
+            }
+
+            .title-film {
+                position: relative;
+                width: calc(100% - 24px);
+                padding: 24px 0px 0px 16px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                color: #FFFFFF;
+                text {
+                    font-size: 20px;
+                    font-weight: 600;
+                    
+                }
+                
+            }
+
+            .genre-container {
+                width: 100%;
+                margin-left: 16px;
+                color: #FFFFFF;
+                text {
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+            }
+
+            .time-release {
+                display: flex;
+                margin-left: 16px;
+                margin-top: 16px;
+                
+                .time-container {
+                    display: inline;
+                    color: #FFFFFF;
+                    margin-right: 24px;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                    }
+
+                    text {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+
+                .release-container {
+                    color: #FFFFFF;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                    }
+
+                    text {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .plot-container {
+                margin: 16px;
+                color: #FFFFFF;
+                font-size: 12px;
+                font-weight: 500;
+                height: 116px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: justify;
+            }
+            
+        }
+    }
+}
+
+.overlay-view {
+    &.show {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+}

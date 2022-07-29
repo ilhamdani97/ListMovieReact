@@ -1,0 +1,20 @@
+.a-button {
+    position: relative;
+   
+    button {
+        min-width: 100px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: transparent;
+        border: 2px solid #FFDE03;
+        cursor: pointer;
+        color: #FFDE03;
+
+        &:hover {
+            background-color: #FFDE03;
+
+            color: #212121;
+        }
+    }
+    
+}
